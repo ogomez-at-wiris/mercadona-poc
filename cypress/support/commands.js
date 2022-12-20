@@ -23,3 +23,7 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('acceptCookies', () => {
+    cy.setCookie('OptanonAlertBoxClosed', '2022-05-12T14:53:23.823Z');
+})
